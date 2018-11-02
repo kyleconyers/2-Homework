@@ -1,0 +1,39 @@
+-- Drops the programming_db if it already exists --
+DROP DATABASE IF EXISTS programming_db;
+-- Create a database called programming_db --
+CREATE DATABASE programming_db;
+USE programming_db;
+
+-- Use programming db for the following statements --
+
+CREATE TABLE programming_languages(
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  language VARCHAR(20),
+  rating INTEGER(11),
+  mastewred BOOLEAN DEFAULT true,
+  PRIMARY KEY(id),
+  
+  -- Create a numeric column called "id" which will automatically increment its default value as we create new rows. --
+
+  -- Create a string column called "language" --
+
+  -- Create an integer column called "rating" --
+
+  -- Create a boolean column called "mastered" which will automatically fill --
+  -- with true when a new row is made and the value isn't otherwise defined. --
+
+  -- Set the id as this table's primary key
+);
+
+-- Create new example rows
+INSERT INTO programming_languages (language, rating)
+VALUES ("HTML", 95);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("JS", 99);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("JQuery", 98);
+
+INSERT INTO programming_languages (language, rating)
+VALUES ("MySQL", 70);
